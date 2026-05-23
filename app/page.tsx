@@ -25,11 +25,11 @@ export default function Home() {
           <input
             type="text"
             placeholder="Email"
-            className="w-full p-4 rounded-md mb-3 border-2 border-slate-500 bg-slate-800/80 text-white"
+            className="w-full p-4 rounded-md mb-2 border-2 border-slate-500 bg-slate-800/80 text-white"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Contraseña"
             className="w-full p-4 rounded-md mb-3 border-2 border-slate-500 bg-slate-800/80 text-white"
           />
           <Link href="/dashboard" className="w-full p-4 rounded-md bg-blue-500 text-white block text-center">

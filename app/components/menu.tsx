@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Menu() {
     return (
-      <div className="flex justify-center items-center min-h-screen w-full flex-1 flex-col items-center justify-center font-sans">
-        <div className="bg-white rounded-lg p-4 w-full">
+      <div className="flex justify-center items-center min-h-screen w-full flex-1 flex-col items-center justify-center font-sans shadow-lg bg-slate-800 bg-opacity-20">
+        <div className="flex justify-center items-center rounded-lg p-4 w-full">
             <ul>
             <li>
                 <Link href="/dashboard">Dashboard</Link>
