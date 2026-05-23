@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Dashboard() {
   return (
     <div className="relative flex min-h-full w-full flex-1 flex-col items-center justify-center font-sans">
