@@ -65,16 +65,24 @@ body {
 }
 
 .rounded-tab-left {
-  --r: 25px; /* control the radius */
+  --r: .8em; /* control the radius */
 
-  line-height: 1.8; /* control the height */
-  padding-inline: 0 0 .2em .5em;
-  border-inline: var(--r) solid #0000;
-  border-radius: calc(2*var(--r)) calc(2*var(--r)) 0 0/var(--r);
+  line-height: 1.7; /* control the height */
+  padding-inline: .5em;
+  border-block: var(--r) solid #0000;
+  border-radius: var(--r) 0 0 var(--r)/calc(2*var(--r));
   mask: 
-    radial-gradient(var(--r) at var(--r) 0,#0000 98%,#000 101%)
-      calc(-1*var(--r)) 100%/100% var(--r) repeat-x,
+    radial-gradient(var(--r) at 0 var(--r),#0000 98%,#000 101%)
+      100% calc(-1*var(--r))/var(--r) 100% repeat-y,
     conic-gradient(#000 0 0) padding-box;
   background: #131822 border-box; /* border-box is needed for a gradient coloration */
-  width: fit-content;
+}
+
+.rounded-tab-left.alt {
+  border-radius: 0 var(--r) var(--r) 0/calc(2*var(--r));
+  mask: 
+    radial-gradient(var(--r) at 100% var(--r),#0000 98%,#000 101%)
+      0 calc(-1*var(--r))/var(--r) 100% repeat-y,
+    conic-gradient(#000 0 0) padding-box;
+  background: #131822 border-box;
 }
