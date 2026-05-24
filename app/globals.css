@@ -28,3 +28,38 @@ body {
 .m-height-screen {
   min-height: calc(100vh - 100px);
 }
+
+.rounded-tab {
+  --r: 25px; /* control the radius */
+
+  line-height: 1.8; /* control the height */
+  padding-inline: .2em .5em;
+  border-inline: var(--r) solid #0000;
+  border-radius: calc(2*var(--r)) calc(2*var(--r)) 0 0/var(--r);
+  mask: 
+    radial-gradient(var(--r) at var(--r) 0,#0000 98%,#000 101%)
+      calc(-1*var(--r)) 100%/100% var(--r) repeat-x,
+    conic-gradient(#000 0 0) padding-box;
+  background: #131822 border-box; /* border-box is needed for a gradient coloration */
+  width: fit-content;
+}
+
+.rounded-tab-inverted {
+  --r: 25px;
+
+  line-height: 1.8;
+  padding-inline: 0.5em;
+  border-inline: var(--r) solid #0000;
+  /* was: top corners rounded → now bottom */
+  border-radius: 0 0 calc(2 * var(--r)) calc(2 * var(--r)) / var(--r);
+  mask:
+  /* was: at var(--r) 0 + strip at bottom → now at bottom + strip at top */
+    radial-gradient(var(--r) at var(--r) 100%, #0000 98%, #000 101%)
+      calc(-1 * var(--r)) 0 / 100% var(--r) repeat-x,
+    conic-gradient(#000 0 0) padding-box;
+  background: #131822 border-box;
+  width: 100%;
+  display: block;
+  padding: 0 30px;
+    padding-top: 5px;
+}

@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="grid grid-cols-[2fr_10fr] items-center justify-center font-sans min-h-screen w-full">
+    <div className="grid grid-cols-[50px_10fr] bg-img items-center justify-center font-sans min-h-screen w-full">
       <TopBar />
       <div className="min-h-full w-full">
         <Menu />
