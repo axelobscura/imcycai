@@ -25,7 +25,7 @@ export default function TopBar() {
             }}
         >
             <div className="grid grid-cols-[6fr_1fr] items-center justify-center w-full gap-2 border-2 border-slate-700 bg-slate-800/80 rounded-full p-0 p-1 pl-5 mt-2">
-                <input type="text" placeholder="Buscar contenido" className="w-full p-0 rounded-mdtext-white" />
+                <input type="text" placeholder="Buscar contenido" className="w-full p-0 rounded-mdtext-white text-white" />
                 <button className="w-full p-1 rounded-full bg-blue-500 text-white block text-center">
                     <span className="text-center font-bold text-lg">BUSCAR</span>
                 </button>
@@ -35,7 +35,7 @@ export default function TopBar() {
             <SiAirplayaudio size={25} className="text-white mr-3" />
             <TfiEmail size={25} className="text-white mr-2" />
             <Link href="/">
-                <TbUserCircle size={30} />
+                <TbUserCircle size={30} className="text-white" />
             </Link>
         </div>
       </div>
